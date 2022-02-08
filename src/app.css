@@ -1,0 +1,7 @@
+:root {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Roboto';
+	margin: 0;
+	--card-bg-color: rgb(46, 46, 46);
+}
