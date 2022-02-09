@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Shipper from '$lib/Shipper.svelte';
 	import { onInterval } from '$lib/shared/utils';
+	import Loader from '$lib/Loader.svelte';
 	import { onMount } from 'svelte';
 	export let settings: App.ShippersViewSettings;
 
@@ -32,7 +33,7 @@
 {#if error}
 	<div>Error occured when loading data</div>
 {:else if shippers === undefined}
-	<div>loading</div>
+	<Loader />
 {:else}
 	<div class="wrapper">
 		{#each shippers as shipper (shipper.id)}

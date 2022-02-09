@@ -6,10 +6,7 @@
 	export let link: string;
 </script>
 
-<a
-	class="wrapper"
-	href={link}
->
+<a class="wrapper" href={link}>
 	<h2>
 		{name}
 	</h2>
@@ -20,8 +17,6 @@
 
 <style>
 	.wrapper {
-		height: 100px;
-		width: 200px;
 		background: rgb(82, 43, 43);
 		padding: 50px;
 		border-radius: 10px;
@@ -29,7 +24,7 @@
 		text-align: center;
 		margin-bottom: 10px;
 		cursor: pointer;
-		color:aliceblue;
+		color: aliceblue;
 		text-decoration: none;
 	}
 </style>

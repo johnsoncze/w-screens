@@ -3,11 +3,9 @@
 	export let value: number;
 </script>
 
-<div class="wrapper">
-	<div class="name">{name}</div>
-	<div class="value">
-		{value ?? '-'}
-	</div>
+<div class="name">{name}</div>
+<div class="value">
+	{value ?? '-'}
 </div>
 
 <style>
@@ -18,9 +16,7 @@
 		text-align: center;
 	}
 	.value {
+		margin: 8px 0;
 		font-size: 3em;
-	}
-	.wrapper {
-		margin: 15px;
 	}
 </style>

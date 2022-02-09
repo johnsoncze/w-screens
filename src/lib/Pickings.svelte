@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onInterval } from '$lib/shared/utils';
 	import Picking from '$lib/Picking.svelte';
+	import Loader from '$lib/Loader.svelte';
     import { onMount } from 'svelte';
 
 	export let settings: App.PickingsViewSettings;
@@ -34,7 +35,7 @@
 {#if error}
 	<div>Error occured when loading data</div>
 {:else if pickings === undefined}
-    <div>loading</div>
+    <Loader />
 {:else}
 	<div class="wrapper">
 		{#each pickings as picking (picking.id)}
